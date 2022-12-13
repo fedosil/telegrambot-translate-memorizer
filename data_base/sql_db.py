@@ -1,5 +1,5 @@
-from data_base import sqlite_db as db
-# from data_base import postgesql_db as db
+# from data_base import sqlite_db as db
+from data_base import postgesql_db as db
 
 
 def sql_start():
