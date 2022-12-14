@@ -31,6 +31,7 @@ All actions should be executed from the source directory of the project and only
 1. Create PostgreSQL database
 2. Change data_base/config.py
 3. Change import in data_base/sql_db.py on:
+
    ```bash
    from data_base import postgesql_db as db
    ```
