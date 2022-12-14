@@ -3,6 +3,7 @@
 #### Stack:
 
 - [Python](https://www.python.org/downloads/)
+- [iogram](https://docs.aiogram.dev/en/latest/)
 - [PostgreSQL](https://www.postgresql.org/)
 - [SQlite3](https://www.sqlite.org/index.html)
 
