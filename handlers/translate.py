@@ -54,10 +54,14 @@ async def handle_translate(text):
 # @dp.register_message_handler()
 async def register_translate(message: types.Message):
     translate_text, source = await handle_translate(message.text)
-    await message.reply(
-        text=translate_text,
-        reply_markup=InlineKeyboardMarkup(row_width=1).add(InlineKeyboardButton(text='Добавить', callback_data='add'))
-    )
+    if len(message.text.split()) <= 4:
+        await message.reply(
+            text=translate_text,
+            reply_markup=InlineKeyboardMarkup(row_width=1).add(InlineKeyboardButton(text='Добавить', callback_data='add'))
+        )
+    else:
+        await message.reply(text=translate_text)
+
 
 
 # @dp.message_handler(commands='id')
