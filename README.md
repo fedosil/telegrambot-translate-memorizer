@@ -35,4 +35,5 @@ All actions should be executed from the source directory of the project and only
 
    ```bash
    from data_base import postgesql_db as db
-   ```
+   ``` 
+4. Restart the bot in telegram or enter the command /start
